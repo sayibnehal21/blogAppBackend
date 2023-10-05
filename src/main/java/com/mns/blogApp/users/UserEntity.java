@@ -21,21 +21,17 @@ public class UserEntity {
     @Column(nullable = false)
     private Long id;
 
-    @Column(nullable = false)
-    @NonNull
-    private String firstName;
-
-    @Column(nullable = false)
-    @NonNull
-    private String lastName;
+//    @Column(nullable = false)
+//    @NonNull
+//    private String firstName;
+//
+//    @Column(nullable = false)
+//    @NonNull
+//    private String lastName;
 
     @Column(nullable = false)
     @NonNull
     private String username;
-
-//    @Column(nullable = false)
-//    @NonNull
-//    private String password;
 
     @Column(nullable = false)
     @NonNull

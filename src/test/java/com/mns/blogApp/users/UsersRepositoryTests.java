@@ -10,7 +10,6 @@ import org.springframework.test.context.ActiveProfiles;
 @DataJpaTest
 @ActiveProfiles("test")
 public class UsersRepositoryTests {
-
     @Autowired
     private UsersRepository usersRepository;
 
@@ -18,24 +17,21 @@ public class UsersRepositoryTests {
     @Order(1)
     void can_create_users() {
         var user = UserEntity.builder()
-                .firstName("Mohammad Nehal")
-                .lastName("Sayib")
-                .username("nehal")
-                .email("mns@blog.com")
+                .username("arnavg")
+                .email("arnav@blog.com")
                 .build();
 
         usersRepository.save(user);
+
     }
 
     @Test
     @Order(2)
     void can_find_users() {
         var user = UserEntity.builder()
-                .firstName("Mohammad Nehal")
-                .lastName("Sayib")
-                .username("nehal")
-                .email("mns@blog.com")
-                .build();;
+                .username("arnavg")
+                .email("arnav@blog.com")
+                .build();
 
         usersRepository.save(user);
         var users = usersRepository.findAll();
