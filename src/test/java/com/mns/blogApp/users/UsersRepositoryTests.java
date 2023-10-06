@@ -15,10 +15,12 @@ public class UsersRepositoryTests {
     @Test
     @Order(1)
     void can_create_users() {
-        var user = UserEntity.builder()
-                .username("arnavg")
-                .email("arnav@blog.com")
-                .build();
+//        var user = UserEntity.builder()
+//                .username("arnavg")
+//                .email("arnav@blog.com")
+//                .build();
+
+        var user =new UserEntity("arnavg", "arnav@blog.com");
 
         usersRepository.save(user);
 
@@ -27,10 +29,11 @@ public class UsersRepositoryTests {
     @Test
     @Order(2)
     void can_find_users() {
-        var user = UserEntity.builder()
-                .username("arnavg")
-                .email("arnav@blog.com")
-                .build();
+//        var user = UserEntity.builder()
+//                .username("arnavg")
+//                .email("arnav@blog.com")
+//                .build();
+        var user =new UserEntity("arnavg", "arnav@blog.com");
 
         usersRepository.save(user);
         var users = usersRepository.findAll();
