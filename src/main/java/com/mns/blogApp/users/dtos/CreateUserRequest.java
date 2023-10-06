@@ -3,7 +3,7 @@ package com.mns.blogApp.users.dtos;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
-import org.springframework.lang.NonNull;
+import lombok.NonNull;
 
 @Data
 @Setter(AccessLevel.NONE)

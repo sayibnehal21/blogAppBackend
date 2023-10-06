@@ -2,9 +2,10 @@ package com.mns.blogApp.articles.dtos;
 
 import lombok.AccessLevel;
 import lombok.Data;
+import lombok.NonNull;
 import lombok.Setter;
-import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
+
 
 @Data
 @Setter(AccessLevel.NONE)

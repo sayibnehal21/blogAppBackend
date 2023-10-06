@@ -1,7 +1,6 @@
 package com.mns.blogApp.users;
 
 import com.mns.blogApp.users.dtos.CreateUserRequest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
