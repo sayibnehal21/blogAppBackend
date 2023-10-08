@@ -21,18 +21,6 @@ import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 @RequiredArgsConstructor
 public class AppSecurityConfig {
 
-
-//    @Bean
-//    public SecurityFilterChain securityFilterChain(HttpSecurity http, HandlerMappingIntrospector introspector) throws Exception {
-//        MvcRequestMatcher.Builder mvcMatcherBuilder = new MvcRequestMatcher.Builder(introspector);
-//        http.cors(cors -> cors.disable());
-//        http.csrf(csrf -> csrf.disable());
-////        http.authorizeHttpRequests((request) -> request.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/*")).permitAll());
-//        http.authorizeHttpRequests((request) -> request.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.POST, "/users/signup")).permitAll());
-//        http.authorizeHttpRequests((request) -> request.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.POST, "/users/login")).permitAll());
-//        return http.build();
-//    }
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors(cors -> cors.disable());
