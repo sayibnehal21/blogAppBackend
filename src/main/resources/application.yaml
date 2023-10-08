@@ -6,4 +6,4 @@ spring:
     url: jdbc:h2:file:./blog_app;
   jpa:
     hibernate:
-      ddl-auto: create #in pod use update, Not create
+      ddl-auto: create #in prod use update, Not create
